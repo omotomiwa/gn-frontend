@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
+import Link from 'next/link';
+
 import { Inter } from "next/font/google";
 
 import {
@@ -14,6 +15,7 @@ import {
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { useRef } from "react";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -218,12 +220,25 @@ export default function Home() {
           </HStack>
         </div>
 
-        <div className="export-btn">
+      
+      </main>
+      <div className="export-btn">
           <Button colorScheme="blue" onClick={downloadPDF}>
             Download Result
           </Button>
         </div>
-      </main>
+        <div className="viewer-wrapper">
+        <Link href="/pdf-view" className="view-pdf">
+          
+
+        <Button colorScheme="teal" mb={5}>
+            View pdf <ArrowForwardIcon/>
+          </Button>
+</Link>
+
+        </div>
+     
+
     </>
   );
 }

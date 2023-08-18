@@ -38,3 +38,14 @@ header {
   margin-top: 45px;
   margin-bottom: 35px;
 }
+.viewer-wrapper{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+}
+.pdf-text{
+
+  text-align: center;
+}
+
