@@ -1,0 +1,40 @@
+* {
+  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.pdf-body {
+  padding: 50px 50px 20px 50px;
+}
+h4 {
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+header {
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 55px;
+  color: #cf1512;
+}
+.grade-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.score-grade {
+  display: grid;
+  place-items: center;
+  padding-right: 15px;
+}
+.export-btn {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
